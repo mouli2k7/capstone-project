@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidsphere</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="video.css">
+
+</head>
+<body>
+  <header>
+    <div class="logo">▶ <span>VS</span> Vidsphere</div>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search videos...">
+      <button onclick="searchVideos()">🔍</button>
+    </div>
+    <div class="user-profile">CC</div>
+  </header>
+
+  <div class="container">
+    <nav>
+      <a href="#">🏠 Home</a>
+      <a href="#">🔥 Trending</a>
+      <a href="#">📺 Subscriptions</a>
+      <a href="#">🕒 History</a>
+      <a href="#">❤️ Liked Videos</a>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <h2>Recommended Videos</h2>
+        <div class="videos" id="videoContainer">
+          
+          <div class="video" onclick="openVideo('https://www.youtube.com/embed/UB1O30fR-EE')">
+            <img class="thumb" src="https://i.ytimg.com/vi/UB1O30fR-EE/hqdefault.jpg" alt="HTML Video">
+            <div class="video-info">
+              <h4>Learn HTML in 15 Minutes</h4>
+              <p>Vidsphere Dev • 1.2K views • 2 days ago</p>
+            </div>
+          </div>
+
+          <div class="video" onclick="openVideo('https://www.youtube.com/embed/yfoY53QXEnI')">
+            <img class="thumb" src="https://i.ytimg.com/vi/yfoY53QXEnI/hqdefault.jpg" alt="CSS Tutorial">
+            <div class="video-info">
+              <h4>CSS Full Course for Beginners</h4>
+              <p>CSS Craft • 3.1K views • 1 week ago</p>
+            </div>
+          </div>
+
+          <div class="video" onclick="openVideo('https://www.youtube.com/embed/W6NZfCO5SIk')">
+            <img class="thumb" src="https://i.ytimg.com/vi/W6NZfCO5SIk/hqdefault.jpg" alt="JavaScript Basics">
+            <div class="video-info">
+              <h4>JavaScript Crash Course 2025</h4>
+              <p>JS Hub • 5K views • 3 days ago</p>
+            </div>
+          </div>
+
+          <div class="video" onclick="openVideo('https://www.youtube.com/embed/Ke90Tje7VS0')">
+            <img class="thumb" src="https://i.ytimg.com/vi/Ke90Tje7VS0/hqdefault.jpg" alt="React Tutorial">
+            <div class="video-info">
+              <h4>React Tutorial for Beginners</h4>
+              <p>Frontend Coders • 2.4K views • 1 month ago</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="watch-section" id="watchSection">
+        <button class="back-btn" onclick="goBack()">⬅ Back</button>
+        <iframe class="watch-video" id="videoPlayer" src="" height="400" allowfullscreen></iframe>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Vidsphere — Created by Chekka Chandra Mouli</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
